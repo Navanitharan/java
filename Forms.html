@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form page</title>
+        <script>
+            function myfunction(){
+                var name=document.getElementById("fname").value;
+                alert("Hello "+name+"!");
+            }
+        </script>
+        <style>
+            #s1{
+                color: azure;
+                background-color: slateblue;
+                height:30px;
+                width: 60px;
+                
+                border-radius: 5px;
+            }
+            #s1:hover{
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>User form</legend>
+        <form>
+            <lable>First name</lable><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <lable>Password</lable><br>
+            <input type="password" id="pass" name="pass" required><br>
+            <input type="radio" id="html" name="fav" value="HTML">
+            <lable for"html">HTML</lable><br>
+            <input type="radio" id="css" name="fav" value="CSS">
+            <lable for"css">CSS</lable><br>
+
+            <lable for="course"> choose the course</lable>
+            <select id="course" multiple>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Java">Java</option>
+                <option value="Javascript">Javascript</option>
+            </select>
+
+            <input type="submit" value="Submit" id="s1" onclick="myfunction()">
+                            
+        </form>
+    </fieldset>
+    </body>
+</html>

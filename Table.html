@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Table creation example
+        </title>
+        <style>
+            table{
+                text-align:center;
+                border:2px lightcoral;
+                border-radius: 10px;
+                padding: 10px;
+                width:400px;
+                height: 300px;
+            }
+            th:hover{
+                 background-color:burlywood;
+            }
+            td:hover{
+                background-color:coral;
+            }
+            tr:nth-child(even){
+                background-color: color-mix(in srgb-linear, green 10%, rgb(255, 0, 144) 50%);
+            }
+        </style>
+    </head>
+    <body>
+        <table id="table" border=2 bordercolor="Violet" width="400" height="300" cellspacing="5" cellpadding="5">
+            <tr>
+                <th colspan="3" bgcolor="MistyRose">Vegtable price details</th>
+            </tr>
+            <tr>
+                <th colspan="1">Vegetable</th><th colspan="1">Type</th><th colspan="1">Price</th>
+            </tr>
+            <tr>
+                <td>Apple</td><td>Organic</td><td>Rs.50</td>
+            </tr>
+            <tr>
+                <td>Beetroot</td><td>Organic</td><td>Rs.40</td>
+            </tr>
+            <tr>
+                <td>Carrot</td><td>Organic</td><td>Rs.45</td>
+            </tr>
+        </table>
+    </body>
+</html>

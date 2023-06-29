@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Draw circle</title>
+        <script type="text/Javascript">
+            function drawCircle(){
+                var c=document.getElementById("myCanvasCircle");
+                var ctx=c.getContext("2d");
+                ctx.fillStyle="#E34C26";
+                ctx.beginPath();
+                ctx.arc(95,50,40,0,360);
+                ctx.stroke();
+                ctx.closePath();
+                ctx.fill();
+            }
+        </script>
+    </head>
+    <body onLoad="drawCircle()">
+        <canvas id="myCanvasCircle" width="200" height="200" style="border:3px solid green;"></canvas>
+    </body>
+</html>

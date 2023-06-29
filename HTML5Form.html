@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML 5 Form</title>
+        <script>
+            function myFunction(){
+                var na=document.getElementById("na").value;
+                alert("Your response has been recorded "+na+".");
+            }
+        </script>
+    </head>
+    <body>
+        <form onsubmit="myFunction()">
+        <lable for="na">Name</lable><br>
+        <input type="text" id="na" maxlength="15" placeholder="Please Enter your Name" required 
+        autofocus pattern="[A-Z a-z]+"><br>
+        <lable for="email-id">Email</lable><br>
+        <input type="email" id="email-id" placeholder="Please Enter mail-id" required><br>
+        <input type="submit" id="s1" value="Submit"></input>
+        </form>
+    </body>
+</html>

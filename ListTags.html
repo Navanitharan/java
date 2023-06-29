@@ -1,0 +1,61 @@
+<!--
+    Three types of list
+    1.Unorder list -- start with <ul> tag 
+                      list item starts with <li> tag
+    2.Order list
+    3.Definition list
+
+    1.Unorder list
+-->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>List Tags</title>
+        <style>
+            body{
+                background-color:rgb(56, 71, 63);
+                background-image: url('Source images/BGimage.jpg');background-repeat:repeat;
+            }
+            #p1{
+                background-color:aqua;
+            }
+            #list{
+                color: rgb(25, 24, 23);
+                text-shadow: 4px 2px 3px rgb(6, 21, 3);
+                text-align: left;
+            }
+            img{
+                width:200px;
+                height:200px;
+                border:5px solid orange;
+                border-radius: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Unorder list</h1>
+        <p id="p1">First we are going to see Unorder list</p>
+        <ul type="square"id="list">
+            <li id="carrot"> Carrot</li>
+                <img src="Source images/carrot image.jpg">
+                <li id="beet">Beetroot</li>
+                <img src="Source images/Beetroot.jpg">
+                <li id="app">Apple</li>
+            <img src="Source images/AppleImage.jpg">
+        </ul>
+        <h1>
+            <marquee direction="right" behavior="alternate" scrollamount=2 hspace="220">Order list</marquee></h1>
+        <ol start="5">
+            <li>Apple</li>
+            <li>Beetroot</li>
+            <li>Carrot</li>
+        </ol>
+        <h1>Definition list</h1>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language</dd>
+        <dt>SGML</dt>
+        <dd>Standard Generalized Markup Language</dd>
+        <dt>XML</dt>
+        <dd>Extensible Markup Language</dd>
+    </body>
+</html>

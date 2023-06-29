@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-image: url(bgimage.JPG);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.element{
+    height:50%;
+    width: 40%;
+    background-color:rgb(28, 28, 28);
+    opacity: 0.8;
+}
+.circleframe{
+    width: 6rem;
+    height: 6rem;
+    border: none;
+    border-radius:50%;
+    margin-top: -60px;
+    margin-left: 40%;
+    background-color: rgb(197, 125, 246);
+    opacity: 1;
+}
+.flexCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.head{
+    font-size: larger;
+    margin-top: 5%;
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 5%;
+}
+.head{
+    font-family: sans-serif;
+    color: rgb(237, 147, 234);
+}
+.body{
+    margin-left: 5%;
+    margin-right: 10%;
+}
+.userfield{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.uname{
+    font-size: larger;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border:none;
+}
+.footer{
+    width: 90%;
+    margin: 20px;
+}
+.footer .login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 20px;
+    background-color:rgb(237, 147, 234);
+    
+}
+.footer p{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Registration Form</title>
+        <link rel="stylesheet" href="regform.css">
+    </head>
+    <body>
+        <div class="body">
+            <form class="form">
+                <div class="formbox">
+                    <div class="formname">
+                        <p >First Name</p>
+                        <br>
+                        <p>Second name</p>
+                        <br>
+                        <p>Email ID</p>
+                        <br>
+                        <p>Mobile Number</p>
+                        <br>
+                        <p>Gender</p>
+                        <br>
+                        <p>Date of Birth(DOB)</p>
+                        <br>
+                        <p class="address">Address</p>
+                        <br>
+                        <p>City</p>
+                        <br>
+                        <p>Pin Code</p>
+                        <br>
+                        <p>State</p>
+                        <br>
+                        <p>Country</p>
+                        <br>
+                        <p id="qualification">Qualification</p>
+                        <br>
+                        <p>Courses</p>
+                    </div>
+                    <div class="inputfield">
+                        <div class="firstname">
+                            <input type="text" id="fname" maxlength="50" placeholder="First Name" required>
+                            <label for="fname">(Max 50 Characters Allowed)</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="text" id="sname" maxlength="50" placeholder="Second Name" required>
+                            <label for="sname">(Max 50 Charachers Allowed)</label>
+                        </div> 
+                        <br>
+                        <div>
+                            <input type="email" id="email" placeholder="eg.mahesh@gmail.com" required>
+                        </div>
+                        <br> 
+                        <div>
+                            <input type="number" maxlength="10" placeholder="eg.97xxxxxxxx" required>
+                            <label>10 Digits Allowed</label>
+                        </div> 
+                        <br>
+                        <div>
+                            <input type="radio" id="Male">
+                            <label for="Male" > Male </label>
+                            <input type="radio" id="Female">
+                            <label for="Female"> Female</label>
+                        </div>
+                        <br>
+                        <div>
+                            <lable for="day"></lable>
+                            <select id="day" name="day">
+                                <option value="1">Day:</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
+                                <option value="6">5</option>
+                                <option value="7">6</option>
+                                <option value="8">7</option>
+                                <option value="9">8</option>
+                                <option value="10">9</option>
+                                <option value="11">10</option>
+                                <option value="12">11</option>
+                                <option value="13">12</option>
+                                <option value="14">13</option>
+                                <option value="15">14</option>
+                                <option value="16">15</option>
+                                <option value="17">15</option>
+                                <option value="18">17</option>
+                                <option value="20">19</option>
+                                <option value="21">20</option>
+                                <option value="22">21</option>
+                                <option value="23">22</option>
+                                <option value="24">23</option>
+                                <option value="25">24</option>
+                                <option value="26">25</option>
+                                <option value="27">26</option>
+                                <option value="28">27</option>
+                                <option value="29">28</option>
+                                <option value="30">29</option>
+                                <option value="31">30</option>
+                                <option value="32">31</option>
+
+                            </select>
+                            <label for="month"></label>
+                            <select id="month" name="month">
+                                <option value="1">Month:</option>
+                                <option value="2">January</option>
+                                <option value="3">february</option>
+                                <option value="4">March</option>
+                                <option value="5">April</option>
+                                <option value="6">May</option>
+                            </select>
+                            <label for="year"></label>
+                            <select id="year" name="year">
+                                <option value="1">Year</option>
+                                <option value="2">2020</option>
+                                <option value="3">2021</option>
+                                <option value="4">2022</option>
+                                <option value="5">2023</option>
+                            </select>    
+                        </div>
+                        <br>
+                        <div class="addressfield">
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="text" id="city" placeholder="New Delhi" maxlength="50" required>
+                            <label for="city">(Max 50 Characters Allowed)</label>
+                        </div>
+                        <br>
+                       <div>
+                        <input type="number" id="pincode" placeholder="110068" maxlength="6" required>
+                        <label for="pincode">(Max 6 Number Allowed)</label>
+                       </div>
+                       <br>
+                       <div>
+                        <input type="text" id="state" name="state" maxlength="50" placeholder="Delhi">
+                        <label for="state">(Max 50 Charachers Allowed)</label>
+                       </div> 
+                       <br>
+                       <div>
+                        <input type="text" id="country" name="country" placeholder="India">
+                       </div> 
+                       <br>
+                       <div>
+                        <input type="checkbox" id="traveling" name="traveling">
+                        <label for="traveling">Traveling</label>
+                        <input type="checkbox" id="singing" name="singing">
+                        <label for="singing">Singing</label>
+                        <input type="checkbox" id="dancing" name="dancing">
+                        <label for="dancing">Dancing</label>
+                        <input type="checkbox" id="cooking" name="cooking">
+                        <label for="cooking">Cooking</label><br>
+                        <input type="checkbox" id="others" name="others">
+                        <label for="others">Others</label>
+                        <input type="text" id="othersbox" name="othersbox">
+                        <label for="othersbox">(Max 50 Characters Allowed)</label>
+                       </div> 
+                       <br>
+                       <div>
+                        <table class="table" border="non width="450" height="300">
+                            <tr id="firstrow">
+                                <th>SI.No</th><th>Examination</th><th>Board</th><th>Percentage</th><th>Year of Passing</th>
+                            </tr>
+                            <tr id="secondrow">
+                                <td>1</td><td>Class X</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                            </tr>
+                            <tr id="thirdrow">
+                                <td>2</td><td>Class XII</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                            </tr>
+                            <tr id="fourthrow">
+                                <td>3</td><td>Graduation (UG)</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                            </tr>
+                            <tr id="fifthrow">
+                                <td>4</td><td>Master (PG)</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                            </tr>
+                            <tr id="sixthrow">
+                                <td>5</td><td>Ph D</td><td><input type="text" id="phd" name="phd" maxlength="10"><p>(10 char max)</p></td><td><input type="text" id="phd per" name="phd per" maxlength=""><p>(10 char max)</p></td><td><input type="text" id="phdyear"></td>
+                            </tr>    
+                        </table>
+                       </div> 
+                       <br>
+                       <div>
+                        <input type="radio" id="BCA"><label for="BCA">BCA(Bachelor of Computer Applications)</label><br>
+                        <input type="radio" id="B.Com"><label for="B.Com">B.Com(Bachelor of Commerce)</label><br>
+                        <input type="radio" id="B.Sc"><label for="B.Sc">B.Sc(Bachelor of Science)</label><br>
+                        <input type="radio" id="BA"><label for="BA">B.A(Bachelor of Arts)</label><br>
+                       </div>                  
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
