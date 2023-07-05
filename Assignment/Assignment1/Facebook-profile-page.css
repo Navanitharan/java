@@ -1,0 +1,352 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    width: 100vw;
+    background: #c4c4c4;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(68, 143, 234);
+}
+.left-sidebar, .right-sidebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+}
+.left-sidebar img{
+    width: 180px;
+    margin-left: 55%;
+}
+.left-sidebar ul{
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+}
+.left-sidebar ul li{
+    list-style: none;
+    margin: 10px;
+}
+.left-sidebar ul li img{
+    width: 40px;
+}
+.right-sidebar .inputbox{
+    background-color: #efefef;
+    width: 360px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-sidebar .inputbox input{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.profile-pic img{
+    border-radius: 50%;
+    width: 60px;
+    margin-left: 30px;
+}
+.Online{
+    position: relative;
+}
+.Online::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color:  #41db51;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.container{
+    width: 70%;
+    display: block;
+    margin: 0 15% 0 15%;
+    padding: 10px;
+}
+.container .cover{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.container .cover img{
+    width: 100%;
+    border-radius: 5px;
+}
+.profile-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.profile-head img{
+    padding: 10px;
+}
+.profile-head .leftside-profilehead{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.mutual-image img{
+    border-radius: 50%;
+    width: 30px;
+    margin-right: -40px;
+}
+.profile-info{
+    padding: 10px;
+}
+.profile-info h1{
+    font-weight: 100;
+}
+.buttons{
+    display:flex;
+    justify-content: center;
+    padding-right: 10px;
+}
+.add-friends{
+    margin: -20px 25px 25px 0;
+    
+}
+.add-friends button{
+    display: flex;
+    align-items: center;
+    background-color: #c4c4c4;
+    cursor: pointer;
+    padding:  2px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.add-friends img, .Message img{
+    width: 20px;
+}
+.Message{
+    display: block;
+    padding:  0 20px;
+    
+}
+.Message button{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding:  2px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.Messagebutton{
+    background-color: rgb(68, 143, 234);
+    margin: -20px 0 25px 0;
+}
+.Morebutton{
+    float: right;
+    background-color: #c4c4c4;
+    border-radius: 5px;
+    
+}
+.Content{
+    display: flex;
+    margin: 15px 0 15px 0;
+}
+.info-bar{
+    width: 40%;
+}
+.content-sidebar-head{
+    width: 100%;
+    margin: 0 15px 15px 0;
+    padding: 1px;
+}
+.content-sidebar{
+    padding: 15px;
+    
+    background-color: #fff;
+    border-radius: 5px;
+}
+.content-sidebar .Intro .About{
+    text-align: center;
+}
+.About img{
+    width: 15px;
+    margin-bottom: -3px;
+}
+.content-sidebar hr{
+    margin: 15px 0;
+}
+.info ul{
+    list-style: none;
+}
+.info ul li{
+    font-size: medium;
+    padding: 15px;
+    font-size: 15px;
+}
+.info ul li i{
+    float: left;
+    padding-right: 10px;
+}
+.Main-content{
+    width: 98%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    
+}
+.Comment-profile-image{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.Comment-profile-image img{
+    border-radius: 50%;
+    width: 60px;
+    margin-right: 20px;
+}
+.Comment-field{
+    padding: 20px;
+    width: 80%;
+    
+}
+.Comment-field h3{
+    font-weight: 20px;
+}
+.Comment-field select{
+    border: none;
+    font-size:15px ;
+    
+}
+.Comment{
+    width: 100%;
+    padding-left: 10%;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 100;
+   
+}
+.Comment input{
+    padding: 20px 20px 0 0;
+    width: 80%;
+    margin-top: 20px;
+    border:0;
+    border-bottom: 1px solid rgb(176, 164, 164);
+    outline: none;
+    font-size: 20px;
+    
+}
+.Comment-options{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -20px;
+}
+.Comment-options button{
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.Comment-options button img{
+    width: 30px;
+    padding: 15px;
+}
+.post-field{
+    justify-items: center;
+    width: 98%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.post-profile-info{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+.post-profile-info img{
+    width: 60px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.post{
+    margin: 15px 30px 15px -5px;
+}
+.post img{
+    margin: 15px;
+    width: 100%;
+    border-radius: 5px;
+}
+.post p{
+    margin: 15px;
+}
+.post .Hash-tag{
+    color: rgb(68, 143, 234);
+}
+.Photos,.Friends{
+    width: 30%;
+    padding: 10px 0px ;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.Posted-Photos img{
+    width: 100px;
+}
+.Content .Leftside{
+    width: 30%;
+    padding-right: 5px;
+}
+.Content .Rightside{
+    width: 70%;
+}
+.Photos{
+    
+    width: 100%;
+}
+.Photos img{
+    width: 100px;
+    padding: 10px 5px;
+}
+.Friends{
+    
+    width: 100%;
+}
+.Friends img{
+    width: 100px;
+    padding: 10px 5px;
+}
+.Friends-head{
+    display: flex;
+    justify-content: space-between;
+}
+.like{
+    display: flex;
+    justify-content:start;
+    
+}
+.like button{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: none;
+    background: none;
+}
+.like button img{
+    width: 25px;
+}

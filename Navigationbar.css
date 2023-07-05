@@ -1,0 +1,100 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+*{
+    padding:0% 0;
+    margin: 0;
+    
+}
+body{
+    background-image: url(bgimage2.jpg);
+    background-repeat:no-repeat;
+    font-family: sans-serif; 
+}
+.divbar{
+    background-image:linear-gradient(rgba(208, 118, 95,0.3),rgba(102, 35, 67,0.3));
+    text-align: center;
+    opacity: 0.7;
+}
+.divbar ul{
+    display: inline-flex;
+    list-style: none;
+    color: rgba(15, 11, 13,0.3);
+
+}
+.divbar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.divbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 223, 180);
+}
+.active, .divbar ul li:hover{
+    background-color: rgb(102, 35, 67);
+    
+}
+.Sub-Menu-About{
+    display: none;
+}
+.divbar ul li:hover .Sub-Menu-About{
+    display: block;
+    position: absolute;
+    background-image:linear-gradient(rgb(102, 35, 67),rgb(208, 118, 95));
+    margin-top: 15px;
+}
+.divbar ul li:hover .Sub-Menu-About ul{
+    display: block;
+    margin: 10px;
+}
+.divbar ul li:hover .Sub-Menu-About ul li{
+    width: 140px;
+    padding: 10px;
+    border-bottom: 1px dotted rgb(255, 223, 180);
+    text-align: left;
+}
+.divbar ul li:hover .Sub-Menu-About ul li:last-child{
+    border-bottom: none;
+}
+.Sub-Menu-Internship{
+    display: none;
+}
+.divbar ul li:hover .Sub-Menu-Internship{
+    display: block;
+    position: absolute;
+    background-image:linear-gradient(rgb(102, 35, 67),rgb(208, 118, 95));
+}
+.divbar ul li:hover .Sub-Menu-Internship ul{
+    display: block;
+    margin: 15px;
+}
+.divbar ul li:hover .Sub-Menu-Internship ul li{
+    width: 140px;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px dotted rgb(255, 223, 180);
+}
+.divbar ul li:hover .Sub-Menu-Internship ul li:last-child{
+    border-bottom: none;
+}
+.submenu-2{
+    display: none;
+}
+.hover-me:hover .submenu-2{
+    display: block;
+    position: absolute;
+    margin-top: -43px;
+    margin-left: 100px;
+    background-color:rgb(208, 118, 95);
+}
+.hover-me:hover .submenu-2 ul li a{
+    color:rgb(102, 35, 67) ;
+}
+.hover-me:hover .submenu-2 ul li a i{
+    margin-right:10px ;
+}
+.hover-me:hover .submenu-2 ul li a:hover{
+    color: rgb(208, 118, 95);
+}
+.bi-arrow-right{
+    float: right;
+}
